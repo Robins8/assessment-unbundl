@@ -8,6 +8,7 @@
     font-family: 'Segoe UI', sans-serif;
     background: #fff8f2;
     color: #1e1e1e;
+    
   }
   
   /* Header */
@@ -507,9 +508,14 @@
 
 /* media quaries */
 
-@media (max-width: 390px){
+
 
  @media (max-width: 390px) {
+
+  body{
+    max-width: 390px;
+    overflow: hidden;
+  }
   .header {
     width: 100%;
     height: 80px;
@@ -528,6 +534,7 @@
     height: auto;
     gap: 0;
     justify-content: flex-end;
+
   }
 
   .phone {
@@ -544,85 +551,308 @@
     display: none;
   }
 
-  .main {
+  .main{
     flex-direction: column;
-    align-items: center;
-    padding: 0 16px;
   }
 
-  .left-content {
-    width: 390px;
+  .left-content{
     height: 394px;
-    top: 120px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    width: 390px;
+    overflow: hidden;
+    
+    
   }
 
   .text-box {
-    width: 390px;
-    height: 205px;
-    top: 66px;
-    padding: 20px 16px;
-    gap: 24px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  padding: 20px 16px;
+  gap: 24px;
+  margin-top: 66px;
+  position: absolute;
   }
 
-  #doctor-img {
-    width: 216px;
-    height: 280px;
-    top: 114px;
-    left: 416px; /* optional - might go off screen; consider centering it instead */
-    transform: rotate(-180deg);
+   .text-box p{
+    font-size: 12px;
+    font-weight: 400;
+    
+    
+  }
+  .text-box h2{
+    font-size: 17px;
+    font-weight: 400;
+    padding-right: 90px;
+    
+    
   }
 
-  .btn-orange {
-    width: 225px;
-    height: 38px;
-    padding: 8px 24px;
-    gap: 20px;
-    border-radius: 50px;
-    border-width: 1px;
-    font-size: 14px;
-    justify-content: center;
-  }
+  
+    #doctor-img {
+  position: relative;
+  width: 216px;
+  height: 280px;
+  top: 114px;
+  left: 202px;
 
-  .right-content {
-    width: 100%;
-    height: auto;
-    padding: 24px 16px;
-    gap: 20px;
-  }
+ 
+}
 
-  .form {
-    width: 100%;
-    gap: 20px;
-    display: grid;
-  }
+.right-content{
+  width: 358px;
+  height: 449px;
+  
+}
 
-  .form-input {
-    width: 100%;
-    height: 38px;
-    padding: 14px 16px;
-    border-radius: 24px;
-    box-sizing: border-box;
-  }
+.right-content h3{
+  justify-content: center;
+  align-items: center;
+}
 
-  .captcha-container {
-    flex-direction: row;
-    width: 100%;
-    border-radius: 24px;
-  }
+.right-content p{
+  justify-self: center;
+  align-items: center;
+  font-size: 16px;
+}
 
-  .captcha-container input {
-    padding: 12px;
-    font-size: 14px;
-  }
+.form-input  {
+  height: 38px;
+  width: 326px;
+  border-radius: 24px solid rgba(255, 224, 196, 1);
+  padding: 17px 16px;
+}
 
-  .captcha-box {
-    font-size: 14px;
-    padding: 12px;
-  }
+.captcha-container{
+  height: 38px;
+  width: 326px;
+  border-radius: 24px solid rgba(255, 224, 196, 1);
+  
+}
+
+.checkbox{
+  font-size: 13px;
+  width: 326px;
+  height: 32px;
+  justify-content: center;
+}
+
+.rct-types{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 358px;
+  height: 703px;
+  /* position: relative; */
 
 }
+
+
+.rct-head{
+  width: 358px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rct-head h2{
+  white-space: nowrap;
+  /* padding-left: 30px; */
+  width: 228px;
+  height: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  
+}
+
+.rct-head p{
+   /* margin-top: 40px;
+   margin-bottom: 40px; */
+  width: 358px;
+  height: 63px;
+  /* justify-content: center; */
+}
+
+.rct-cards {
+  display: flex;
+  /* overflow-x: auto; */
+  gap: 22px;
+  margin-top: 50px;
+        margin-left: 250px;
+        
+}
+.rct-card{
+  width: 285px;
+  height: 588px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 224, 196, 1) ;
+   display: flex;
+  flex-direction: column;
+
+}
+
+.rct-card img{
+ height: 285px;
+ width: 285px;
+ object-fit: cover;
+}
+
+.smile-text{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.smile-text h2{
+  white-space: nowrap;
+  font-size: 20px;
+  /* padding-left: 30px; */
+  width: 228px;
+  height: 24px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  
+}
+
+.smile-text p{
+   /* margin-top: 40px;
+   margin-bottom: 40px; */
+  width: 358px;
+  height: 63px;
+  /* justify-content: center; */
+}
+
+.safety-content{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+    .safety-content h2 {
+        font-size: 22px;
+        white-space: nowrap;
+        /* padding-left: 30px; */
+        width: 228px;
+        height: 24px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        /* position: absolute; */
+        margin-left: 17px;
+    }
+
+.safety-content p{
+   /* margin-top: 40px;
+   margin-bottom: 40px; */
+  width: 358px;
+  height: 63px;
+      margin-left: 115px;
+  justify-content: center;
+}
+
+.safety-section{
+  margin-top: 135px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.safety-cards {
+    height: 345px;
+    width: 1320px;
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+  }
+
+.safety-card{
+ left: 290px;
+  width: 300px;
+  height: 353.3px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.safety-card img{
+  width: 300px;
+  height: 200px;
+  border: none;
+  
+}
+
+.card-overlay{
+  flex-wrap: wrap;
+  width: 300px;
+  height: 153.4px;
+  padding: 20px;
+  gap: 8px;
+          margin-top: 80px;
+        left: 0;
+        border-radius: 0px;
+}
+
+.card-overlay h3{
+
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-section{
+  position: relative;
+  top: 72px;
+  left: 0;
+  justify-content: space-between;
+}
+
+.footer-container{
+  padding: 10px;
+}
+
+.footer-logo{
+  width: 110px;
+  height: 44px;
+  left: 10px;
+  margin-right: 20px;
+}
+
+.footer-content{
+  width: 118px;
+  height: 46px;
+  gap: 24px;
+}
+.footer-links a {
+  font-size: 10px;
+white-space: nowrap;
+}
+
+.footer-links{
+  gap: 10px;
+}
+
+    .footer-text {
+        width: 390px;
+        font-size: 10px;
+        white-space: wrap;
+        right: 248px;
+        position: relative;
+    }
+    
+
+
+  
+ 
+
+
+
 }
